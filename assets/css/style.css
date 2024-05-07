@@ -11865,6 +11865,13 @@ header a {
   margin: 5px;
 }
 
+.custom-navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 800;
+  top: 0;
+}
+
 h1, .h1 {
   text-transform: uppercase;
   font-size: 1.5rem;
