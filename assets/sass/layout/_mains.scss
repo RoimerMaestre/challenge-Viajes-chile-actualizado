@@ -1,0 +1,44 @@
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  
+  .custom-h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffff;
+    text-transform: uppercase;
+  }
+  
+  
+  /* ...ESTILOS PARA EL IMPUT... */
+  form {
+    color: white;
+    & h2 {
+      text-align: center;
+    }
+  }
+  
+  .color-button-enviar {
+    background-color: #2b9daa;
+    color: white;
+  }
+  
+  .input-tamaño-mensaje {
+    height: 150px;
+  }
+
+
+
+  .img-quienes-somos{
+   width: 100%;
+  }
+  .cont-img-quienes-somos{
+    width: 50%;
+  }
+  .cont-parrafor-quienes-somos{
+    width: 50%;
+  }
+
+ 

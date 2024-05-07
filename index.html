@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viajes Chile Actualizado</title>
+    <!-- link de boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- link de javascript de boostrap -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link de css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- link para awesome -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/d5b48fda4e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- SE INICIA MENU DE NAVEGACION -->
+      <nav class="navbar fixed-top navbar-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              src="./assets/img/viajes.svg"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Viajes Chile
+          </a>
+          <div class="menu-nav-links d-none d-md-flex">
+            <a href="#inicio">Inicio</a>
+            <a href="#quienes-somos">Quiénes somos</a>
+            <a href="#destacados">Destacados</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+          <div class="d-block d-md-none text-white">
+            <button
+              class="navbar-toggler btn btn-outline-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end custom-canvitas"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header"></div>
+              <div class="offcanvas-body bg-dark">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#destacados">Destacados</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- FIN DE MENU NAV -->
+      <!-- CAROUSEL -->
+      <section id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="CARD-1 PAISAJE CON MONTAÑAS"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel2.jpg"
+              class="d-block w-100"
+              alt="CARD-2 ROCAS CON FORMA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel3.jpg"
+              class="d-block w-100"
+              alt="CARD3 PINGUINO"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <!-- TERMINO CAROUSEL -->
+    </header>
+
+    <main>
+      <!-- INICIO DE SECCION QUIENES SOMOS -->
+      <!-- ojo esta seccion debera desaparecer cuando la pantalla sea pequeña -->
+      <article
+        id="quienes-somos"
+        class="container text-white d-none d-lg-block"
+      >
+        <div class="row">
+          <h1 class="text-center my-5">¿Quiénes somos?</h1>
+          <!--  -->
+          <div class="col-sm-4 cont-img-quienes-somos">
+           <img src="./assets/img/quienes-somos.jpg" class="img-quienes-somos" alt="img-quienes-somos">
+          </div>
+          <div class="col-sm-4 cont-parrafor-quienes-somos">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium libero! Quidem illum distinctio delectus, voluptate vero labore impedit voluptatibus beatae quo, natus cumque nam praesentium ea officiis architecto consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quod a, delectus, dolore facere consequatur odio assumenda quaerat nesciunt cum pariatur? Natus tempora, rerum laborum veniam nihil numquam aut sapiente!</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sit omnis, aperiam accusantium nulla sunt doloribus blanditiis rerum hic distinctio mollitia illum facere dolores, aliquam, a officia? Quidem, quod adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quisquam praesentium quia, sapiente provident repudiandae veniam voluptatem. Culpa asperiores corporis a animi ipsum eaque placeat beatae earum nostrum vitae. Explicabo!</p>
+          </div>
+          <!--  -->
+          
+        </div>
+      </article>
+      <!-- TERMINO DE SECCION DE QUIENES SOMOS -->
+
+      <!-- INICIO DE SECCION DE DESTACADOS -->
+      <section id="destacados" class="container">
+        <h2 class="custom-h2 my-5">Destacados</h2>
+
+        <!-- carta de ejemplo -->
+        <section class="container">
+          <div class="row">
+            <!-- card-1 -->
+            <div class="col-12 col-md-6 card mb-3 p-0 mx-2" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 bg-dark contenedor-img-destacado">
+                  <img src="./assets/img/card1.jpg" class="img-fluid rounded-start h-100 card-destacados" alt="card-1">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Region los Lagos</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit minus impedit officia voluptas facere voluptatem nemo.</p>
+                    <div class="custom-icon-airplane d-flex justify-content-evenly">
+                      <div><i class="fa-solid fa-plane mx-2"></i><span>Vuelos desde:</span></div>
+                      <div>$159.990</div>                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- card-2 -->
+            <div class="col-12 col-md-6 card mb-3 p-0 mx-2" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./assets/img/card2.jpg" class="img-fluid rounded-start h-100" alt="card-2">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Desierto de Atacama</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit minus impedit officia voluptas facere voluptatem nemo.</p>
+                    <div class="custom-icon-airplane d-flex justify-content-evenly">
+                      <div><i class="fa-solid fa-plane mx-2"></i><span>Vuelos desde:</span></div>
+                      <div>$189.990</div>                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- card-3 -->
+            <div class="col-12 col-md-6 card mb-3 p-0 mx-2" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./assets/img/card3.jpg" class="img-fluid rounded-start h-100" alt="card-3">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Norte grande de Chile</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit minus impedit officia voluptas facere voluptatem nemo.</p>
+                    <div class="custom-icon-airplane d-flex justify-content-evenly">
+                      <div><i class="fa-solid fa-plane mx-2"></i><span>Vuelos desde:</span></div>
+                      <div>$289.990</div>                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- card-4 -->
+            <div class="col-12 col-md-6 card mb-3 p-0 mx-2" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./assets/img/card4.jpg" class="img-fluid rounded-start h-100" alt="card4">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Bosque Mágico</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit minus impedit officia voluptas facere voluptatem nemo.</p>
+                    <div class="custom-icon-airplane d-flex justify-content-evenly">
+                      <div><i class="fa-solid fa-plane mx-2"></i><span>Vuelos desde:</span></div>
+                      <div>$259.990</div>                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- carta de ejemplo -->
+       
+
+      <!--INICIO DE SECCION DE CONTACTO-->
+      <section id="contacto" class="container my-5">
+        <h2 class="text-center text-white">Contacto</h2>
+        <hr />
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              aria-describedby="nombreHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
+      <!-- TERMINO DE SECCION DE CONTACTO -->
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <h3>Viajes Chile</h3>
+      </div>
+      <div class="iconos-footer">
+        <!-- Icono de git-hub -->
+        <a
+          href="https://github.com/RoimerMaestre/Viajes-chile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-github-square fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="GitHub"
+          ></i>
+        </a>
+        <!-- Icono de LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/tu_usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-linkedin fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="LinkedIn"
+          ></i>
+        </a>
+
+        <!-- Icono de Twitter -->
+        <a
+          href="https://twitter.com/tu_usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-twitter-square fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="Twitter"
+          ></i>
+        </a>
+
+        <!-- Icono de Facebook -->
+        <a
+          href="https://www.facebook.com/tu_usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-facebook-square fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="Facebook"
+          ></i>
+        </a>
+      </div>
+    </footer>
+    <!-- CIERRE DE FOOTER -->
+
+    <!-- SCRIPT DE JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT PARA JAVASCRIPT -->
+    <script src="assets/javascript/index.js"></script>
+  </body>
+</html>
