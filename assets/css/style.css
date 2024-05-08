@@ -11859,6 +11859,14 @@ a {
   color: #000000;
 }
 
+h2, .h2 {
+  border-bottom: 1px solid white;
+}
+
+h1, .h1 {
+  border-bottom: 1px solid;
+}
+
 body {
   font-family: "Raleway", "Sans serif";
 }
