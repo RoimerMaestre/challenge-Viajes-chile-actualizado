@@ -11849,6 +11849,16 @@ body {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.title-modal {
+  color: #000000;
+}
+
 body {
   font-family: "Raleway", "Sans serif";
 }
@@ -11914,7 +11924,6 @@ form h2, form .h2 {
 }
 
 footer {
-  background-color: #2b9daa;
   padding: 30px;
   display: flex;
   align-items: center;

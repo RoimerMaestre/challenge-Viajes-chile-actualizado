@@ -402,69 +402,266 @@
       </section>
       <!-- TERMINO DE SECCION DE CONTACTO -->
     </main>
-    <!-- FOOTER -->
-    <footer>
-      <div>
-        <h3>Viajes Chile</h3>
+    <!-- INICIO FOOTER -->
+    <footer class="container" id="contacto">
+      <div class="row">
+        <h2 class="text-center text-white p-4">Contactame</h2>
+
+        <!-- INICIO DE INPUT -->
+        <div class="col-md-6 p-3">
+          <!-- SECCION DE INPUT -->
+          <form class="row d-flex g-3">
+            <div class="col-6">
+              <span>Nombre</span
+              >  <i class="fa-solid fa-circle-exclamation mx-2" data-bs-toggle="tooltip" title="Ingrese su nombre"></i>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                aria-label="First name"
+              />
+            </div>
+
+            <div class="col-6">
+              <span>Email</span
+              ><i
+                class="fa-solid fa-circle-exclamation mx-2"
+                id="emailTooltip" data-bs-toggle="tooltip" title="Ingrese su email"
+              ></i>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Last name"
+              />
+            </div>
+
+            <div class="col-12">
+              <span>Mensaje</span
+              ><i class="fa-solid fa-circle-exclamation mx-2" data-bs-toggle="tooltip" title="Ingrese mensaje si asi lo desea"></i>
+              <input
+                type="text"
+                class="form-control pb-5"
+                placeholder="Escribe un mensaje..."
+                aria-label="Last name"
+              />
+              <div class="form-check my-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <!-- como dato curioso traje una ventana modal y modifique su botton, literalmente lo quite y coloque las clases data-bs-toggle="modal" data-bs-target="#staticBackdrop para que el efecto que tenia el botton lo utilazara el input -->
+                <label class="form-check-label" for="invalidCheck" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Acepto términos y condiciones
+                </label>
+
+                <!-- ventana modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5 title-modal" id="staticBackdropLabel">Términos y condiciones</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="iconos-footer">
-        <!-- Icono de git-hub -->
-        <a
-          href="https://github.com/RoimerMaestre/Viajes-chile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i
-            class="fab fa-github-square fa-2x"
-            style="color: #ffffff"
-            data-bs-toggle="tooltip"
-            title="GitHub"
-          ></i>
-        </a>
-        <!-- Icono de LinkedIn -->
-        <a
-          href="https://www.linkedin.com/in/tu_usuario"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i
-            class="fab fa-linkedin fa-2x"
-            style="color: #ffffff"
-            data-bs-toggle="tooltip"
-            title="LinkedIn"
-          ></i>
-        </a>
+      <div class="modal-body">
+       <p class="text-dark"> CONDICIONES	GENERALES	Y	ACEPTACIÓN	DEL	USUARIO	
+        Este	sitio	web	(en	adelante	el	“Sitio”)	es	de	propiedad	de	Nestlé	Chile	S.A. y/o	Societé	de	Produits	
+        Nestlé	S.A. (en	adelante	“NESTLÉ”).	El	acceso	a	este	Sitio	es	gratuito	y	solo	está	condicionado	a	la	
+        aceptación	y	 cumplimiento	 de	estos	Términos	y	 Condiciones	 de	Uso.	El	 ingreso	a, o	registro	en,
+        este	Sitio	otorga	a	la	persona	el	carácter	de	usuario	del	Sitio	(en	adelante	“Usuario”),	e	implica	una	
+        aceptación	total	e	incondicional	a	las	cláusulas,	condiciones,	advertencias	y	términos	de	uso	que	a	
+        continuación	 se	indican. NESTLÉ	 se	 reserva	el	 derecho	 de	modificar	 y	actualizar	unilateralmente	
+        estos	 Términos	 y	 Condiciones	 de	 Uso.	 Estas	 modificaciones	 y	 actualizaciones	 estarán	 serán	
+        publicadas	en	este	 Sitio.	 Los	Términos	 y	 Condiciones	 que	 rigen	 son	 los	 últimos	 publicados	en	el	
+        Sitio,	 por	 lo	 que	 el	 Usuario	 tiene	 la	 carga	 de	 estar	 al	 tanto	 de	 estas	 modificaciones	 y	
+        actualizaciones.
+        Esta	aceptación	se	entenderá	otorgada	desde	el	momento	en	que	el	Usuario	usa	y/o	se	registra	en	
+        el	 Sitio.	 Si	 el	 Usuario no	 está	 de	 acuerdo	 con	 estos	 Términos	 y	 Condiciones	 de	 Uso debe	
+        abstenerse	de	ingresar,	utilizar	y/o	registrarse	en	este	Sitio. Por	tanto,	previo	al	ingreso,	utilización	
+        y/o	 registro	 del	 Sitio,	 el	 Usuario debe	 leer	 atentamente	 los	 Términos	 y	 Condiciones	 de	 Uso
+        vigentes para	el	Sitio.	El	desconocimiento	del	Usuario	de	estos	Términos	y	Condiciones	de	Uso	no	
+        implicará	la	no	aplicación	de	las	disposiciones	y	cláusulas	contenidas	en	los	mismos.
+        Por	regla	general,	este	Sitio	es	solamente de	carácter	informativo y	relacional,	y	tiene	por	objeto	
+        dar	 información	 a	 los	 Usuarios	 sobre	 NESTLÉ,	 sus	 productos,	 servicios,	 promociones	 y	 otra	
+        información	que	NESTLÉ	pueda	considerar	útil	para	los	Usuarios.	En	este	sentido,	la	información	
+        proporcionada	por	NESTLÉ	a	 través	del	mismo	no	constituye	una	oferta	en	 términos	legales	y	la	
+        sola	 visita	 al	 Sitio	 por	 parte	 del	Usuario	 no	 constituye	 aceptación	 en	 términos	 legales,	 y	 por	 lo	
+        tanto	no	impone	al	Usuario	obligación	alguna.	En	consecuencia,	las	 relaciones	contractuales	que	
+        deriven	 de	 la	 información	 que	 recibe	 el	 Usuario	 a	 través	 de	 este	 Sitio	 requerirán	 de	 su	
+        confirmación	por	escrito	por	parte	de	NESTLÉ.	Excepcionalmente,	cuando	este Sitio	ofrezca	a	sus	
+        Usuarios	 la	 celebración	 de	 contratos	 a	 través	 de	 medio	 electrónicos,	 éstos	 se	 regirán	 por	 lo	
+        dispuesto	en	el	artículo	12	A	de	la	Ley	19.496	y	en	las	demás	normas	aplicables.
+        </p>
+        <p class="text-dark"> DEFINICION	E	INSTRUMENTALIZACION	DEL	SITIO
+          Este	Sitio	ha	sido	creado	por	NESTLÉ	con	el	fin	de	crear una	comunidad	participativa	alrededor	de	
+          contenidos	y	beneficios,	que	permitan	un	diálogo	constante	y	retroactivo	entre	sus	integrantes	y	
+          NESTLÉ.
+          Así,	 según	 lo	 señalado	 en	 el	 párrafo	 anterior	 los	 Usuarios	 del	 Sitio	 se	 obligan	 a	 respetar	 los	
+          Términos	 y	 Condiciones	 de	 Uso	 del	 mismo y	 se	 comprometen	 a	 que	 las	 publicaciones	 de	
+          contenidos,	datos,	informaciones	u	opiniones	que	hagan	en	el	Sitio	se	basen	en	el	respeto	mutuo,	
+          el	 orden	 público	 y	 las	 buenas	 costumbres,	 de	manera	 que	 no	 causen	 daño	 a	 NESTLÉ	 ni	 a	 otros	
+          Usuarios,	 y	 que	 no	 obstaculicen	 la	 buena	 convivencia	 entre	 éstos. Por	 ello	 los	 contenidos	
+          entregados	por	los	Usuarios	deben	ser	objetivos	y	veraces,	dejando	de	lado	cualquier	propuesta	o	
+          mención	a	temas	que	pudiesen	instar	al	odio,	confusión	o	división	de	sus	miembros.</p>
+          <p class="text-dark"> MODIFICACIÓN	DE	LA	INFORMACIÓN
+            NESTLÉ	se	reserva	la	facultad	y	el	derecho	de	actualizar,	modificar	o	eliminar,	en	parte	o	en	todo,		
+            y	 sin	 expresión	 de	 causa,	 cualquier	 contenido	 o	 información	 publicada	 en	 este	 Sitio	 según	 lo	
+            estime	conveniente,	pudiendo	hacer	uso	de	tal	facultad	en	cualquier	momento	y	sin	previo	aviso.	
+            Este	 derecho	 abarca	 los	 contenidos	 referidos	 a	 disponibilidad	 o	 stock	 de	 productos	 o	 servicios,	
+            especificaciones,	 precio,	 o	 en	 cuanto	 a	 la configuración	 y	 funcionalidades	 del	 Sitio	 o	 de	 la	
+            información	de	actividades	promocionales</p>
+            <p class="text-dark"> CONTENIDO	DEL	SITIO
+              Los	productos	y	servicios,	las	funcionalidades	y	las	promociones	que	NESTLÉ	describe	en	este	Sitio	
+              están	ofrecidos	únicamente	para	el	territorio	nacional de	la	República	de	Chile.
+              NESTLÉ	realiza	los	máximos	esfuerzos	para	evitar	cualquier	error	en	los	contenidos	que	pudieran	
+              aparecer	en	este	Sitio.	Sin	embargo,	NESTLÉ	no	garantiza	ni	se	responsabiliza	de	las	consecuencias	
+              que	pudieran	derivarse	de	los	errores	involuntarios	en	los	contenidos	que	pudieran	aparecer	en	
+              este	Sitio,	pues	esta	información	es	referencial	y	no	constituye	una	oferta	en	sentido	legal	de	los	
+              productos, servicios	o	promociones	que	aparecen	éste.
+              NESTLÉ	 no	 asume	 responsabilidad	 alguna por	 las	 discrepancias	 que	 pudiesen	 existir	 entre	 los	
+              materiales	 impresos	 (folletería,	 catálogo	 o	 cualquier	 otro	 documento)	 y	 la	 versión	 electrónica	
+              publicada	 en	 este	 Sitio,	 incluyendo	 las	 bases	 de	 eventuales	 concursos.	 En	 caso	 de	 discrepancia	
+              entre	 la	 versión	 impresa	 y	 la	 publicada	 en	 el	 Sitio,	 prevalecerá	 la	 versión	 impresa,	 salvo	 lo	
+              establecido	respecto	a	erratas	y	actualizaciones.
+              Las	 informaciones,	 contenidos	 y	 datos	 de	 cualquier	 especie	 que	 estén	 incluidos	 en	 éste	 Sitio	 se	
+              revisan	 antes	 de	 su	 publicación, sin	 embargo,	 no	 es	 posible	 garantizar	 que	 se	 encuentren	
+              absolutamente	libres	de	erratas,	errores	mecanográficos,	defectos	de	composición	y/o	problemas	
+              equivalentes,	 por	 lo	 que	 NESTLÉ	 recomienda	 a	 los	 Usuarios	 que	 estén	 atentos	 a	 las	 posibles	
+              actualizaciones	o	rectificaciones	que	el	Sitio	incorpore,	y	que	si	surge	alguna	duda	respecto	de	la	
+              información	contenida	en	el	Sitio,	se	comuniquen	con	NESTLÉ	a	 través	de	canales	personales	de	
+              comunicación,	tales	como	la	dirección	de	correo	electrónico,	número	de teléfono	y/o	de	fax	que	se	
+              proporcionan	 en	 este	 mismo	 Sitio,	 y	 que	 en	 ningún	 caso	 adopten	 decisiones	 basadas	 única	 y/o	
+              exclusivamente	en	la	información	del	Sitio.
+              Errores	 tipográficos:	 Todos	 las	 actividades	 promocionales	 publicados	 por	 NESTLÉ	 en	 cualquier	
+              soporte	 publicitario,	 propio	 o	 de	 terceros,	 especialmente	 los	 referentes	 a	 banners,	
+              comunicaciones	electrónicas	por	e-mail,	o	cualquier	otro,	y	que	contengan	algún	error	tipográfico	
+              ya	sea	involuntario	o	por	manipulación	de	terceros,	carecen	de	todo	valor,	y	en	caso	de	duda	se	
+              recomienda	que	los	Usuarios	confirmen	los	datos	a	través	de	los	canales	personales	mencionados	
+              en	el	párrafo	anterior.
+              Cualquier	 determinación	 basada	 en	 la	 información	 que	 aparece	 en	 este	 Sitio será	 de	 exclusiva	
+              responsabilidad del	 Usuario.	 El	 Usuario acuerda	 que	 es	 su	 responsabilidad	 supervisar	 cualquier	
+              cambio	respecto	al	material	y	a	la	información	contenida	en	este	Sitio.</p>
+              <p class="text-dark"> SERVICIOS	Y	MATERIALES	DEL	SITIO
+                Este Sitio	 permite	 a	sus	 Usuarios	 como	 a	 terceros	 proveedores	 acceder	 y	 utilizar	 los	 servicios	
+                ofrecidos a	través	del	mismo	(en	adelante,	los	"Servicios").	
+                Se	entenderá	 por	 “Materiales” incluyen	 toda	imagen,	 texto,	gráfico,	 dibujo,	archivo	 de	 sonido	 o	
+                imagen,	fotografía,	grabación,	programa	de	computación	y,	en	general,	cualquier	clase	de	material	
+                o	contenido,	debiendo	interpretarse	estas	expresiones	en	su	más	amplio	sentido.
+                La	información,	Materiales,	textos,	gráficos,	conexiones	y	otros	que	figuran	en	el	presente	Sitio	se	
+                suministran	 de	 la	 manera	 en	 que	 se	 encuentran	 y	 como	 están	 disponibles.	 Aun	 cuando	 los	
+                Materiales	 son	 seleccionados	 libremente	 por	 NESTLÉ,	 no	 siempre	 se	 puede	 verificar	 la	
+                confiabilidad	de	los	mismos.	Por	lo	 tanto,	es	 responsabilidad	del	Usuario	el	análisis,	verificación,	
+                aplicación	y/o	interpretación	de	los	mismos.	
+                NESTLÉ	 no	 se	 responsabiliza	 en	 modo	 alguno	 de	 aquellos	 contenidos,	 actividades	 comerciales,	
+                productos	 y	 servicios	 incluidos	 que	 pudiesen	 visualizarse	 mediante	 enlaces	 electrónicos	 (links),	
+                directa	 o	 indirectamente,	 a	 través	 de	 este	 Sitio,	 en	 especial	 los	 que	 pudieran	 corresponder	 a	
+                contenidos	 de	 valor	 agregado	 para	 el	 Usuario,	 como	 de	 ocio,	 entretenimiento,	 curiosidades,	
+                consejos	u	otros.
+                La	presencia	de	links	en	este	Sitio,	 salvo	manifestación	expresa	en	contrario,	 tiene	una	 finalidad	
+                meramente	 informativa	 y	 en	 ningún	 caso	 supone	 sugerencia,	 invitación	 o	 recomendación	 sobre	
+                los	mismos.	Estos	enlaces	no	representan	ningún	tipo	de	relación	entre	NESTLÉ	y	los	particulares	o	
+                empresas	 titulares	 de	los	 sitios	web	a	los	 que	 puede	accederse	mediante	estos	links.	NESTLÉ	 se	
+                reserva	el	derecho	de	retirar	de	modo	unilateral	y	en	cualquier	momento	los	links	que	aparecen	
+                </p>
+                <p class="text-dark">- DERECHOS	DE	PROPIEDAD	INTELECTUAL	E	INDUSTRIAL	DE	PROPIEDAD	DE	NESTLÉ
+                  La	 totalidad	 de	 la	 información	 que	 contiene	 este	 Sitio,	 será	 considerada	 para	 todos	 los	 efectos	
+                  legales	de	propiedad	de	NESTLÉ	CHILE	S.A.,	sin	perjuicio	de	que	ella,	como	licenciataria	de	Société	
+                  des	Produits	Nestlé S.A.,	con	domicilio	en	Vevey,	Suiza,	establezca	lo	contrario,	pudiendo	utilizar	
+                  con	 cualquier	 fin	 toda	 idea,	 concepto,	 conocimiento	 o	 técnica	 incluidas	 en	 la	 información	 que	
+                  proporcione	un	visitante	a	través	de	este	Sitio.	
+                  NESTLÉ	 no	 estará	 sujeto	 a	 obligación	 alguna	 en	 cuanto	 a	 la	 confidencialidad	 de	 la	 información	
+                  presentada,	salvo	acuerdo	en	contrario	entre	la	empresa	y	sus	clientes,	proveedores	y	asociados,	y	
+                  las	exigencias	legales	que	rigen	actualmente	al	respecto	y	las	que	se	incorporen	en	el	futuro.	
+                  Los	 derechos	 de	 propiedad	 intelectual	 de	 estas	 páginas,	 de	 las	 pantallas	 que	 muestran	 estas	
+                  páginas,	de	la	información	y	material	que	aparecen	en	las	mismas	y	de	su	disposición,	pertenecen	
+                  a	NESTLÉ,	salvo	lo	indicado	en	el	punto	12 siguiente.	
+                  Este	 Sitio	 y	 los	 contenidos	 que	 alberga	 se	 encuentran	 protegidos	 por	 las	 leyes	 de	 Propiedad	
+                  Industrial	e	Intelectual,	 y	 por	 los	 tratados	 internacionales	 suscritos	 y	 ratificados	 por	 Chile.	 Estos	
+                  contenidos	 no	 podrán	 ser	 objeto	 de	 explotación,	 reproducción,	 distribución,	 modificación,	
+                  comunicación	 pública,	 cesión	 o	 transformación,	 ni	 de	 ningún	 otro	 acto	 jurídico	 por	 parte	 de	 un	
+                  tercero	no	autorizado	expresamente	y	por	escrito	por	NESTLÉ.	El	acceso	a	este	Sitio	no	otorga	a	los	
+                  usuarios	 derecho,	 ni	 titularidad	 alguna	 sobre	 los	 derechos	 de	 propiedad	 intelectual	 de	 los	
+                  contenidos	que	alberga	este	Sitio.
+                  El	contenido	de	este	Sitio	puede	ser	descargado	al	 terminal	del	usuario	 (download)	siempre	que	
+                  sea	 para	 su	 uso	 privado	 inmediato	 y	 sin	 ningún	 fin	 comercial.	 Por	 lo	 tanto el	 Usuario	 no	 podrá	
+                  explotar,	 reproducir,	 distribuir,	modificar,	 comunicar	 públicamente,	 ceder,	 transformar	 o	 usar	el	
+                  contenido	de	este	Sitio	con	fines	públicos	o	comerciales.
+                  NESTLÉ	no	 transfiere	a	los	Usuarios	la	propiedad	de	su	software.	El	Usuario	es el	propietario	del	
+                  soporte	 en	 el	 cual	 es	 software	 es	 grabado.	 NESTLÉ	 retiene	 todos	 los	 derechos	 de	 propiedad	
+                  industrial	e	intelectual	incluyendo	el	software.	Si	el	Usuario	transfiere	software	de	este	Sitio	a	su	
+                  terminal,	 no	 podrá	 diseccionarlo	 para	 su	estudio,	o	 descompilarlo,	 traducir	la	versión	 del	código	
+                  objeto	original	o	su	lenguaje	a	otro	código	o	lenguaje.
+                  Todas	 las	 marcas,	 logotipos,	 diseños,	 frases	 de	 propaganda,	 y	 en	 general	 todos	 los	 signos	
+                  distintivos	mostrados	en	este	Sitio	son	propiedad	de	NESTLÉ	o	de	terceros	o	empresas	ligadas	que	
+                  han	autorizado	el	uso	de	los	mismos	a	NESTLÉ.	Se	prohíbe	a	los	Usuarios	y	a	 terceros	usar	estos	
+                  signos	 distintivos,	 descargarlos	 permanentemente,	 copiarlos	 o	 distribuirlos	 por	 cualquier	 medio	
+                  sin	el	permiso	escrito de	NESTLÉ	o	de	la	tercera	empresa	titular	de	los	derechos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+                <!-- cierre de ventana modal -->
+              </div>
+            </div>
 
-        <!-- Icono de Twitter -->
-        <a
-          href="https://twitter.com/tu_usuario"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i
-            class="fab fa-twitter-square fa-2x"
-            style="color: #ffffff"
-            data-bs-toggle="tooltip"
-            title="Twitter"
-          ></i>
-        </a>
+            <div class="col-12 col-lg-6 my-3">
+              <button type="submit" class="btn btn-primary w-100">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- FIN DE INPUT -->
 
-        <!-- Icono de Facebook -->
-        <a
-          href="https://www.facebook.com/tu_usuario"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i
-            class="fab fa-facebook-square fa-2x"
-            style="color: #ffffff"
-            data-bs-toggle="tooltip"
-            title="Facebook"
-          ></i>
-        </a>
+        <!-- SECCION DE ICONOS -->
+        <section class="col-md-6 p-3">
+          <div class="d-flex flex-column">
+            <!--ICONO 1 -->
+            <div class="pb-3 text-white hover">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#" target="_blank">+56979368299</a>
+            </div>
+            <!-- ICONO 2 -->
+            <div class="pb-3 text-white hover">
+              <i class="fa-solid fa-envelope"></i
+              ><a href="#" target="_blank">anacelestep941@gmail.com</a>
+            </div>
+            <!-- ICONO 3 -->
+            <div class="pb-3 text-white hover">
+              <i class="fa-brands fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/ana-celeste-perez-oviedo-29bb0218a"
+                target="_blank"
+                >Linkedin</a
+              >
+            </div>
+            <!-- ICONO DE 4 -->
+            <div class="pb-3 text-white hover">
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/Celeste941" target="_blank">Github</a>
+            </div>
+            <!-- ICONO DE 5 -->
+            <div class="pb-3 text-white hover">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="#" target="_blank">Instagram</a>
+            </div>
+          </div>
+        </section>
+        <!-- FIN SECCION DE ICONOS -->
       </div>
     </footer>
-    <!-- CIERRE DE FOOTER -->
+    <!-- FIN FOOTER -->
+
+    
 
     <!-- SCRIPT DE JQUERY -->
     <script
@@ -472,8 +669,7 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-
     <!-- SCRIPT PARA JAVASCRIPT -->
-    <script src="assets/javascript/index.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
